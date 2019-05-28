@@ -58,6 +58,9 @@ def makeform(root, fields):
 
 if __name__ == '__main__':
     root = Tk()
+    logo = PhotoImage(file="kathetensatz-1.gif")
+    w1 = Label(lol, image=logo).pack(side="right")
+    
     ents = makeform(root, fields)
     root.bind('<Return>', (lambda event, e=ents: fetch(e)))
     b2 = Button(root, text='Höhe',
