@@ -38,9 +38,7 @@ def alles(entries):
     kathb(entries)
 
 
-lol = Tk()
-logo = PhotoImage(file="kathetensatz-1.gif")
-w1 = Label(lol, image=logo).pack(side="right")
+
 
 
 def makeform(root, fields):
@@ -59,7 +57,7 @@ def makeform(root, fields):
 if __name__ == '__main__':
     root = Tk()
     logo = PhotoImage(file="kathetensatz-1.gif")
-    w1 = Label(lol, image=logo).pack(side="right")
+    w1 = Label(root, image=logo).pack(side="right")
     
     ents = makeform(root, fields)
     root.bind('<Return>', (lambda event, e=ents: fetch(e)))
