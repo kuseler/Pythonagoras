@@ -39,7 +39,7 @@ def alles(entries):
 
 
 lol = Tk()
-logo = PhotoImage(file="pythonagoras\kathetensatz-1.gif")
+logo = PhotoImage(file="kathetensatz-1.gif")
 w1 = Label(lol, image=logo).pack(side="right")
 
 
